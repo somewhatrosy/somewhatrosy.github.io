@@ -14,10 +14,7 @@
 
             canvas {
                 width: min(800px, 95vw);
-                height: min(500px, 60vh);
-                position: absolute;
-                top: 0;
-                left: 0;
+                height: min(400px, 60vh);
                 background: #e6b7f0;
                 display: block;
             }
@@ -25,20 +22,71 @@
             .canvas-wrapper {
                 position: relative;
             }
+            
+            .header-text-container {
+                position:absolute;
+                left: 50px;
+                top: 0px;
+                display: flex;
+                font-family: "Arial", sans-serif;
+                font-size: 50px;
+                transform: rotateX(45deg);
+                flex-direction: column;
+                width: 100%;
+                z-index: 20;
+                margin-top:-35px;
+                color: white;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
 
-            hr {
-                width: auto;
-                margin-left: 50px;
-                margin-right: auto;
+
+            .header-section {
+                position: absolute;
+                top: 220px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .full-line {
+                border: none;
+                border-top: 3px solid black;
+                width: 110%;
+                margin: 0;
+                margin-left: -5%; 
+            }
+
+            .text-container {
+                display: flex;
+                font-family: "Arial", sans-serif;
+                font-size: 24px;
+                padding: 10px 0;
+                color: black;
             }
 
         </style>
     </head>
     <body>
-        <div class = "canvas-wrapper">
-            <canvas id="word-canvas" width="800" height="500"></canvas>
+
+        <div class="header-text-container">
+            <p>website of</p>
         </div>
-        <br>
+
+        <div class = "canvas-wrapper">
+            <canvas id="word-canvas" width="800" height="400"></canvas>
+        </div>
+
+        <div class="header-section">
+            <hr class="full-line">
+        
+            <div class="text-container">
+            Under construction.
+            </div>
+        
+            <hr class="full-line">
+        </div>
+
         <script src="index.js" defer></script>
         
     </body>

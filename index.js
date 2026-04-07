@@ -2,7 +2,7 @@ const canvas = document.getElementById("word-canvas");
 const ctx    = canvas.getContext("2d");
 
 const word       = "rose";
-const fontFamily = "Helvetica";
+const fontFamily = "Arial";
 
 const passes = [
     // { count: 40,  min: 28, max: 42, alphaMin: 0.25, alphaMax: 0.40 },
@@ -53,7 +53,7 @@ function draw() {
     maskCanvas.height = H;
     
     const mctx = maskCanvas.getContext("2d");
-    mctx.fillStyle    = "white";
+    mctx.fillStyle    = "black";
     mctx.textAlign    = "left";
     mctx.textBaseline = "top";
     mctx.font         = `700 ${bigFontSize}px ${fontFamily}`;
@@ -109,7 +109,7 @@ function draw() {
                 ctx.strokeStyle = "black";
                 ctx.strokeText(ch, 0, 0);
 
-                ctx.fillStyle = "white";
+                ctx.fillStyle = "red";
                 ctx.fillText(ch, 0, 0);
                 ctx.restore();
             }
@@ -128,6 +128,6 @@ window.addEventListener("resize", () => {
 
 setInterval(() => {
   draw();
-}, 500);
+}, 333);
 
 resizeCanvas();
