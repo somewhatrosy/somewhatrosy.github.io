@@ -1,11 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>
-      hi
-    </title>
-  </head>
-  <body>
-    test
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>word thing</title>
+        <style>
+            html, body {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                background: #e6b7f0;
+            }
+
+            canvas {
+                width: min(800px, 95vw);
+                height: min(500px, 60vh);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #e6b7f0;
+                display: block;
+            }
+
+            .canvas-wrapper {
+                position: relative;
+            }
+
+            hr {
+                width: auto;
+                margin-left: 50px;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "canvas-wrapper">
+            <canvas id="word-canvas" width="800" height="500"></canvas>
+        </div>
+        <br>
+        <script src="index.js" defer></script>
+        
+    </body>
 </html>
