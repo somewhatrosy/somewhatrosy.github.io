@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somewhatrosy's webpage</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+         <style>
+          a img{
+            opacity:0;
+            position: absolute;
+            transform:rotate(0deg);
+            transition:opacity 1s,transform 1s;
+          }
+
+          a img:hover{
+            opacity: 1;
+            transform:rotate(360deg);
+          }
+          
+          #button1{
+            left: 831px;
+            top: 107px;
+          }
+          
+          #button2{
+            left: 842px;
+            top: 217px;
+          }
+         </style>
+  </head>
+  <body>
+
+    <img src="somewhatrosywebsite-to-be_finalFINAL.png" style="position:absolute; left:0px; top:0px;" usemap="#thewholeshebang">
+    
+    <a href="https://twitter.com/somewhatrosy">
+    <img src="twitterhover.png" id="button1">
+    </a>
+    
+    <a href="https://twitch.tv/sincplays">
+    <img src="twitchhover.png" id="button2">
+    </a>
+    
+    <map name="thewholeshebang">
+      <area shape="rect" coords="831,107,1807,193" alt="Official Twitter." href="https://twitter.com/somewhatrosy">
+      <area shape="rect" coords="842,217,1588,339" alt="Official Twitch." href="https://twitch.tv/sincplays">
+      <!--<area shape="rect" coords="60,401,1861,613" alt="Top 100 games of all time." href="/whateveridecidetocallthis.png" -->
+      <area shape="rect" coords="1060,5264,1557,5324" alt="Twitter hashtag for my poetry." href="https://twitter.com/search?q=%23rosepoetrymomence">
+    </map>
+    
+ 
+  </body>
+</html>
