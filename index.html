@@ -62,6 +62,9 @@
                 font-size: 24px;
                 padding: 10px 0;
                 color: black;
+                & a {
+                    white-space-collapse: preserve-spaces;
+                }
             }
 
             .body-text-container {
@@ -102,9 +105,10 @@
         <div class="header-section">
             <hr class="full-line">
         
-            <div class="text-container">
-            <a href="aboutme.html">About me</a> | I can't add a whitespace there | <a href="legacysite/oldsite.html" target="_blank" rel="noopener noreferrer">Legacy site</a> | To come later | So tired
+             <div class="text-container">
+            <a href="aboutme.html">About me</a> <a> </a> | <a> </a> <a href="legacysite/oldsite.html" target="_blank" rel="noopener noreferrer">Legacy site</a> <a> </a> | Other Things | To come later | So tired
             </div>
+        
         
             <hr class="full-line">
         </div>
